@@ -1,0 +1,162 @@
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px;
+  width: 630px;
+  height: 630px;
+  background-color: #b9bcb5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-over-text {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-over-text p {
+  font-size: 48px;
+  color: red;
+}
+.wrapper.active .game-over-text {
+  display: flex;
+}
+
+.row {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.block {
+  display: flex;
+  width: 150px;
+  background-color: #fdfdfd;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fdfdfd;
+  border-radius: 5px;
+}
+
+.header {
+  width: 630px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+
+.new-button {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 75px;
+  height: 44px;
+}
+
+.score {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  height: 44px;
+}
+
+.block.text-1::before {
+  content: "2";
+}
+
+.block.text-1 {
+  background-color: #5c707b;
+}
+
+.block.text-2::before {
+  content: "4";
+}
+
+.block.text-2 {
+  background-color: #42b5a6;
+}
+
+.block.text-3::before {
+  content: "8";
+}
+
+.block.text-3 {
+  background-color: #9d6010;
+}
+
+.block.text-4::before {
+  content: "16";
+}
+
+.block.text-4 {
+  background-color: #b92b92;
+}
+
+.block.text-5::before {
+  content: "32";
+}
+
+.block.text-5 {
+  background-color: #fad207;
+}
+
+.block.text-6::before {
+  content: "64";
+}
+
+.block.text-6 {
+  background-color: #39abd5;
+}
+
+.block.text-7::before {
+  content: "128";
+}
+
+.block.text-7 {
+  background-color: #288751;
+}
+
+.block.text-8::before {
+  content: "256";
+}
+
+.block.text-8 {
+  background-color: #f66d05;
+}
+
+.block.text-9::before {
+  content: "512";
+}
+
+.block.text-9 {
+  background-color: #c6d602;
+}
+
+.block.text-10::before {
+  content: "1024";
+}
+
+.block.text-10 {
+  background-color: #14457c;
+}
+
+.block.text-11::before {
+  content: "2048";
+}
+
+.block.text-11 {
+  background-color: #f3426e;
+}
